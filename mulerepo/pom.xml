@@ -33,7 +33,6 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-							<id>mulesoft-releases</id>
 							<uri>https://anypoint.mulesoft.com</uri>
 							<username>prasad7263</username>
 							<password>Sandhya@123</password>

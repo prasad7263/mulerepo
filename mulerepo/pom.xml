@@ -37,7 +37,7 @@
 							<username>prasad7263</username>
 							<password>Sandhya@123</password>
 							<environment>Sandbox</environment>
-							<muleversion>4.3.0</muleversion>
+							<muleVersion>4.4.0</muleVersion>
 							<workers>1</workers>
 							<workerType>Micro</workerType>
 							<applicationName>mulerepo-prasad</applicationName>

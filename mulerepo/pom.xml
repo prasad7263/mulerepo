@@ -29,7 +29,7 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.3.5</version>
+				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
@@ -37,10 +37,10 @@
 							<username>prasad7263</username>
 							<password>Sandhya@123</password>
 							<environment>Sandbox</environment>
-							<muleVersion>4.3.0</muleVersion>
+							<muleVersion>4.4.0</muleVersion>
 							<workers>1</workers>
 							<workerType>Micro</workerType>
-							<applicationName>mulerepo</applicationName>
+							<applicationName>mulerepo-prasad</applicationName>
 							<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 				

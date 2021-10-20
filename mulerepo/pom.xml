@@ -37,13 +37,13 @@
 							<username>prasad7263</username>
 							<password>Sandhya@123</password>
 							<environment>Sandbox</environment>
-							<muleVersion>4.4.0</muleVersion>
+							<muleVersion>4.3.0</muleVersion>
 							<workers>1</workers>
 							<workerType>Micro</workerType>
 							<applicationName>mulerepo-prasad</applicationName>
 							<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
-				
+			
 				</configuration>
 			</plugin>
 		</plugins>

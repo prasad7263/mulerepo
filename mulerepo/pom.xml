@@ -43,9 +43,28 @@
 							<applicationName>mulerepo-prasad</applicationName>
 							<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
-			
 				</configuration>
-			</plugin>
+				</plugin>
+				<plugin>
+          			 	  <groupId>org.sonatype.plugins</groupId>
+             		      <artifactId>nexus-staging-maven-plugin</artifactId>
+           			      <version>1.6.6</version>
+          			       <extensions>true</extensions>
+        			        <configuration>
+           		          <serverId>nexus</serverId>
+                 	      <nexusUrl>http://localhost:9081/nexus/</nexusUrl>
+                	      <skipStaging>true</skipStaging>
+                      </configuration>
+               	         	 <executions>
+                		       <execution>
+                      		      <id>default-deploy</id>
+                      		      <phase>deploy</phase>
+                      		      <goals>
+                        	      <goal>deploy</goal>
+                        	      </goals>
+                      	       </execution>
+                    		 </executions>   
+        		 </plugin>
 		</plugins>
 	</build>
 
@@ -68,7 +87,6 @@
 		<version>3.6.1.1688</version>
 		</dependency>
 	</dependencies>
-
 	<repositories>
 		<repository>
 			<id>anypoint-exchange-v2</id>
@@ -94,6 +112,12 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</pluginRepository>
-	</pluginRepositories>
-
+		</pluginRepositories>
+	    	<distributionManagement>
+     		   <snapshotRepository>
+     	       <id>mulerelease</id>
+     	       <name>mulerelease</name>
+     	       <url>http://localhost:9081/repository/mulerepo/</url>
+       		   </snapshotRepository>
+			   </distributionManagement>
 </project>

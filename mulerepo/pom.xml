@@ -40,7 +40,7 @@
 							<muleVersion>4.3.0</muleVersion>
 							<workers>1</workers>
 							<workerType>Micro</workerType>
-							<applicationName>mulerepoprasad</applicationName>
+							<applicationName>mulerepo-prasad</applicationName>
 							<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 			
